@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Theme</title>
+  </head>
+  <style>
+    #theme {
+        display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80vh;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-direction: column;
+    }
+
+    button{
+        padding: 10px;
+        background: red;
+        border-radius: 10px;
+        border: transparent;
+        cursor: pointer;
+    }
+  </style>
+  <div>
+  <body id="theme">
+    <h1>Theme Changer</h1>
+    <button>Change Theme</button>
+</div>
+  </body>
+  <script>
+    let button = document.getElementsByTagName("button")[0];
+    let theme = document.getElementById("theme");
+    let toggle = true;
+    button.addEventListener("click", (e) => {
+      if (toggle) theme.style.backgroundColor = "rgba(103, 212, 0, 0.938)";
+      else theme.style.backgroundColor = "";
+      toggle = !toggle;
+    });
+  </script>
+</html>

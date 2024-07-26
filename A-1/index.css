@@ -1,0 +1,144 @@
+:root {
+  --main-color1: rgba(0, 0, 0, 0.899);
+  --main-color2: #ffcc00;
+  --main-font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--main-color2);
+  transition: background-color 0.5s, color 0.5s;
+  background: rgb(9, 121, 111);
+  background: linear-gradient(
+    90deg,
+    rgba(9, 121, 111, 1) 18%,
+    rgba(27, 9, 121, 1) 46%,
+    rgba(113, 0, 255, 1) 100%
+  );
+}
+header {
+  background-image: url(https://w0.peakpx.com/wallpaper/976/851/HD-wallpaper-black-brick-black-wall-bricks-wall-brick-texture-thumbnail.jpg);
+  color: var(--main-color2);
+  padding: 5vh;
+  text-align: center;
+  transition: background-color 0.5s;
+}
+
+header > h1 {
+  font-family: var(--main-font-family);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.code-section > h3 {
+  color: white;
+}
+nav {
+  background-color: var(--main-color1);
+  color: var(--main-color2);
+  padding: 15px;
+  text-align: center;
+  transition: background-color 0.5s;
+  font-family: var(--main-font-family);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+span {
+  color: red;
+  font-family: var(--main-font-family);
+}
+
+section {
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: var(--main-color1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  transition: background-color 0.5s;
+  font-family: var(--main-font-family);
+}
+
+.sub-head {
+  margin-top: 15vh;
+  margin-bottom: 5vh;
+  padding-bottom: 10px;
+  margin-left: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+li {
+  margin-left: 10px;
+  list-style: none;
+  padding: 20px;
+}
+
+li > h3 {
+  font-size: 2rem;
+  padding: 20px;
+  color: red;
+}
+
+footer {
+  background-color: var(--main-color1);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.5s;
+}
+
+.head-txt {
+  text-align: center;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
+  font-size: 3.2rem;
+}
+
+.sub-title {
+  font-style: italic;
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: 10px;
+  color: rgba(255, 255, 255, 0.862);
+}
+/* Additional styles for code and output sections */
+.code-section,
+.output-section {
+  background-color: var(--main-color1);
+  color: #3498db;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #bdc3c7;
+  border-radius: 8px;
+  overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+@media only screen and (max-width: 600px) {
+  header > h1 {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  .head-txt {
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    font-size: 0.9rem;
+  }
+}
